@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<style>
+	*{margin:0; padding:0;}
+	html, body{height:100%;}
+	.main_con{height:50px; width:50px; border-radius: 50%;}
+	.red{background: red;}
+	.blue{background: blue;}
+	.yellow{background: yellow;}
+	.green{background: green;}
+	</style>
+
+    <script type="text/javascript" src="../dist/MCer.js"></script>
+</head>
+<body>
+	<div id="main_con" class="main_con red">
+
+	</div>
+	<div class="main_con blue">
+
+	</div>
+
+    <script type="text/javascript">
+        console.log(MCer)
+		new MCer({
+			// mode: 'show',
+			handler: function(data) {
+				this.showMap({
+					data: data,
+					range: [3]
+				})
+			}
+		});
+    </script>
+</body>
+</html>
